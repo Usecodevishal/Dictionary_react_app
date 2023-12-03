@@ -1,0 +1,30 @@
+.navbar {
+  max-width: 100vw;
+  height: 10vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding:0 2rem;
+}
+
+.active{
+    color:white;
+}
+
+.nav-pages{
+  display: flex;
+  gap:2rem;
+  font-size:20px;
+}
+
+form > input{
+  height:2rem;
+  border:none;
+}
+
+.meaning-div{
+  text-align: left;
+}
