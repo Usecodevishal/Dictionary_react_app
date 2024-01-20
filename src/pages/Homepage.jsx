@@ -11,7 +11,7 @@ function Home({allWords, setAllWords}) {
   const [loading, setLoading] = useState(true);
 
 
-  console.log(allWords);
+  //console.log(allWords);
 
 
   async function getData() {

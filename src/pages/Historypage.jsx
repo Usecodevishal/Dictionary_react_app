@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import Header from "../components/header";
-import everyInputContext from "../context/everyInputContext";
+import { Link } from "react-router-dom";
+
 
 function History({ allWords }) {
     let setWord = new Set(allWords);
@@ -9,7 +10,7 @@ function History({ allWords }) {
   return (
     <div>
       <Header />
-      {allWords && uniqueWord.map((word, index) => <h3 key={index}>{word}</h3>)}
+      {allWords && uniqueWord.map((word, index) => <Link key={index} to={`/history/${word}`}><h1 key={index}>{word}</h1></Link>)}
     </div>
   );
 }
